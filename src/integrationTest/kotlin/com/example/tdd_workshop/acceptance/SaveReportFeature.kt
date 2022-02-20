@@ -6,7 +6,6 @@ import io.restassured.module.mockmvc.RestAssuredMockMvc.given
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.util.Assert
 import java.net.HttpURLConnection
 
 class SaveReportFeature : ApplicationIntegrationTest() {
@@ -16,6 +15,7 @@ class SaveReportFeature : ApplicationIntegrationTest() {
 
     @Test
     fun `save student report`() {
+
         val name = "Adria Manzano"
         val note = 10
 

@@ -8,7 +8,7 @@ import org.springframework.test.context.ActiveProfiles
 
 @Configuration
 @ActiveProfiles("test")
-class InfrastructureConfiguration {
+class ApplicationConfiguration {
     @Bean
     fun reportsRepositoryForTest(namedParameterJdbcTemplate: NamedParameterJdbcTemplate)
     : ReportRepositoryForTest = ReportRepositoryForTest(namedParameterJdbcTemplate)
