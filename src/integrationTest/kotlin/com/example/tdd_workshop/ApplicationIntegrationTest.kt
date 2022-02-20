@@ -1,11 +1,9 @@
 package com.example.tdd_workshop
 
-import com.example.tdd_workshop.helper.DockerComposeHelper
+import com.example.tdd_workshop.infrastructure.helper.DockerComposeHelper
 import io.restassured.module.mockmvc.RestAssuredMockMvc
-import org.junit.Assert
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.BeforeEach
-import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc
 import org.springframework.boot.test.context.SpringBootTest
@@ -17,7 +15,6 @@ import org.testcontainers.junit.jupiter.Testcontainers
 @Testcontainers
 @SpringBootTest(
     classes = [Application::class],
-    properties = ["spring.profiles.active=integration-test"],
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
 )
 @ActiveProfiles("test")
