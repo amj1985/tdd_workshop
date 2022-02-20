@@ -50,6 +50,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.awaitility:awaitility:4.1.1")
     testImplementation("org.testcontainers:junit-jupiter:1.16.2")
+    testImplementation("io.rest-assured:spring-mock-mvc:4.4.0")
 }
 
 tasks.withType<KotlinCompile> {
