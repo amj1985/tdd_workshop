@@ -6,14 +6,7 @@ import com.example.tdd_workshop.domain.ReportsRepository
 class SaveReport(private val saveReportRepository: ReportsRepository) {
 
     fun execute(saveReportCommand: SaveReportCommand) {
-        if(saveReportCommand.note < 0) {
-            throw IllegalArgumentException("note cannot be lower than zero")
-        }
-        if(saveReportCommand.name.contains("[0-9]".toRegex())) {
-            throw IllegalArgumentException("a name cannot contain numbers")
-        }
-
-        saveReportRepository.save(Report(saveReportCommand.name, saveReportCommand.note))
+        TODO("Missing implementation")
     }
 }
 

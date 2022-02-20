@@ -11,7 +11,7 @@ import com.nhaarman.mockito_kotlin.verify
 import org.junit.jupiter.api.Assertions.assertEquals
 
 // TODO LIST
-// Validar que la nota no pueda ser inferior a 0 -> OK
+// Validar que la nota no pueda ser inferior a 0
 // Validar que el nombre no contiene numeros
 // Validar que se llama al repositorio con los valores esperados
 

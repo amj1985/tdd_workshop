@@ -11,7 +11,11 @@ import java.net.HttpURLConnection
 class SaveReportFeature : ApplicationIntegrationTest() {
 
     @Autowired
-    private lateinit var reportsRepositoryForTest : ReportRepositoryForTest
+    private lateinit var reportsRepositoryForTest: ReportRepositoryForTest
+
+    // TODO LIST
+    // Validar que haciendo una peticion rest contra el recurso esperado el servidor responde correctamente (2XX)
+    // Validar que despues de hacer la llamada, se han persistido correctamente las notas del alumno
 
     @Test
     fun `save student report`() {
