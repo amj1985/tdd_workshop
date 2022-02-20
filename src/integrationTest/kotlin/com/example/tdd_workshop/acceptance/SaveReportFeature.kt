@@ -13,7 +13,7 @@ class SaveReportFeature : ApplicationIntegrationTest() {
         given()
             .contentType("application/json")
             .body("{ \"name\": \"Adria Manzano\", \"note\": 10 }")
-            .put("/reports/save")
+            .post("/reports/save")
             .then()
             .statusCode(HttpURLConnection.HTTP_OK)
     }

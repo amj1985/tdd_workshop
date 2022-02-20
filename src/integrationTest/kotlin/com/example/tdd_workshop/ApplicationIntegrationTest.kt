@@ -20,6 +20,7 @@ import org.testcontainers.junit.jupiter.Testcontainers
     properties = ["spring.profiles.active=integration-test"],
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
 )
+@ActiveProfiles("test")
 @AutoConfigureMockMvc
 class ApplicationIntegrationTest {
 
