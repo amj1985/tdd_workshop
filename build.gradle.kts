@@ -53,6 +53,7 @@ dependencies {
     testImplementation("org.awaitility:awaitility:4.1.1")
     testImplementation("org.testcontainers:junit-jupiter:1.16.2")
     testImplementation("io.rest-assured:spring-mock-mvc:4.4.0")
+    testImplementation("com.nhaarman:mockito-kotlin:1.6.0")
 }
 
 tasks.withType<KotlinCompile> {
