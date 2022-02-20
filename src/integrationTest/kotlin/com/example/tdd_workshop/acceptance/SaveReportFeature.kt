@@ -26,7 +26,5 @@ class SaveReportFeature : ApplicationIntegrationTest() {
             .post("/reports/save")
             .then()
             .statusCode(HttpURLConnection.HTTP_OK)
-
-        Assert.isTrue(reportsRepositoryForTest.existsReportByName(name))
     }
 }
