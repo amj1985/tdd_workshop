@@ -1,4 +1,4 @@
-package com.example.tdd_workshop.helper
+package com.example.tdd_workshop.infrastructure.helper
 
 import org.testcontainers.containers.DockerComposeContainer
 import org.testcontainers.containers.wait.strategy.Wait
