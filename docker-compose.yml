@@ -11,4 +11,4 @@ services:
     environment:
       POSTGRES_USER: "root"
       POSTGRES_PASSWORD: "mypassword"
-      POSTGRES_DB: "dothebackend"
+      POSTGRES_DB: "tddworkshop"
