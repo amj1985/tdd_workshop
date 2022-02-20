@@ -4,6 +4,8 @@ spring:
     cloud-platform: kubernetes
   profiles:
     active: dev
+  flyway:
+    enabled: true
   datasource:
     url: "jdbc:postgresql://${database.host}:${database.port}/${database.name}"
     username: "${database.username}"
